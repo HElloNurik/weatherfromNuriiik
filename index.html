@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Weather </title>
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div id="big-container">
+         <div class="flexbox">
+     <p class="weather-about"> Weather in Phantom </p>
+            
+
+
+     <header>
+      <div class="menu-btn">
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+   </header>
+   
+   <div class="menu">
+      <nav>
+         <li><a href="#">Главная</a></li>
+         <li><a href="#">О нас</a></li>
+         <li><a href="#">Услуги</a></li>
+         <li><a href="#">Контакты</a></li>
+      </nav>
+   </div>
+
+
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+                  <div class="grid_box">
+                  <div id="DivD" class="div">
+                     <p id="to_weather">Yesterday</p>
+                     <i onclick="ChangeBG()" id="black" class="fas fa-meh-blank"></i>
+                     <i onclick="ChangeWhite()" id="white" class="far fa-meh-blank"></i>
+                     <br><br>
+                     <p class="about-weather-towhite">00:00 - 04:00 = +7 C <i id="tall__t" class="fas fa-cloud-rain"></i></p>
+                     <p class="about-weather-towhite_2">04:00 - 08:00 = +12 C <i id="wind" class="fas fa-wind"></i></p>
+                     <p class="about-weather-towhite_3">08:00 - 12:00 = +15 C <i class="fas fa-cloud-sun-rain" id="cloud__sun"></i></p>
+                     <p class="about-weather-towhite_4">12:00 - 16:00 = +13 C <i class="fas fa-cloud-sun" id="Cloud_aob"></i></p>
+                     <p class="about-weather-towhite_5" >16:00 - 20:00 = +8 C <i class="fas fa-cloud-moon" id= "sun-fun"></i></p>
+                     <p class="about-weather-towhite_6">20:00 - 24:00 = +4 C <i class="fas fa-moon" id="Moon"></i></p>
+                  </div>
+                  <div class="div" id="boyaah">
+                     <p id="weather_today">Today</p>
+                     <i onclick="Btn_change()" id="blackstar" class="fas fa-meh-blank"></i>
+                     <i onclick="Btn_White()" id="white__black" class="far fa-meh-blank"></i> <br><br>
+                     <p id="p__1">00:00 - 04:00 = +8 C <i id="window" class="fas fa-wind"></i></p>
+                     <p id="p__2">04:00 - 08:00 = +12 C <i id="window" class="fas fa-wind"></i></p>
+                     <p id="p__3">08:00 - 12:00 = +10 C <i class="fas fa-cloud-sun-rain" id="lets__sun"></i></p>
+                     <p id="p__4">12:00 - 16:00 = +9 C <i class="fas fa-cloud-sun" id="joke_aob"></i></p>
+                     <p id="p__5">16:00 - 20:00 = +7 C <i class="fas fa-cloud-moon" id= "Info__moon"></i></p>
+                     <p id="p__6">20:00 - 24:00 = +3 C <i class="fas fa-moon" id="Moon"></i></p>
+                  </div>
+                  <div class="div" id="tuzik">
+                     <p id="to_morrow">Tomorrow</p>
+                     <i onclick="Myfunction()" id="Btnchange" class="fas fa-meh-blank"></i>
+                     <i onclick="secondMyfunction()" id="off-white" class="far fa-meh-blank"></i> <br><br>
+                     <p class="text1">00:00 - 04:00 = +9 C <i class="fas fa-moon"></i></i></p>
+                     <p class="text2">04:00 - 08:00 = +11 C<i class="fas fa-sun"></i></p>
+                     <p class="text3">08:00 - 12:00 = +15 C <i class="fas fa-cloud-sun"></i></p>
+                     <p class="text4">12:00 - 16:00 = +12 C <i class="fas fa-cloud-sun-rain"></i></p>
+                     <p class="text5">16:00 - 20:00 = +7 C<i class="fas fa-smog"></i></p>
+                     <p class="text6">20:00 - 24:00 = +5 C<i class="fas fa-smog"></i></p>
+                  </div>
+               </div>
+         <div id="today__">
+         <p id="clock"><p>
+            <h1 id="Calendar">January</h1>
+            <div id="flex-about">
+            
+            <p id="monday">Monday</p>
+            <p id="tuesday">Tuesday</p>
+            <p id="Wednesday">Wednesday</p>
+            <p id="Thursday">Thursday</p>
+            <p id="Friday">Friday</p>
+            <p id="Saturday">Saturday</p>
+            <p id="Sunday">Sunday</p>
+               </div>
+               <div id="felx-about__2">
+            <p class="calendar__1">01</p>
+            <p class="calendar__red__1">02</p>
+         </div>
+         <div class="flexbox__1">
+            <p class="calendar__a">03</p>
+            <p class="calendar">10</p>
+            <p class="calendar">17</p>
+            <p class="calendar">24</p>
+            <p class="calendar">31</p>
+         </div>
+         <div class="flexbox__2">
+            <p class="calendar__a_2">04</p>
+            <p class="calendar">11</p>
+            <p class="calendar">18</p>
+            <p class="calendar">25</p>
+         </div>
+         <div class="flexbox__3">
+            <p class="calendar__a_3">05</p>
+            <p class="calendar">12</p>
+            <p class="calendar">19</p>
+            <p class="calendar">26</p>
+         </div>
+         <div class="flexbox__4">
+            <p class="calendar__a_4">06</p>
+            <p class="calendar">13</p>
+            <p class="calendar__20">20</p>
+            <p class="calendar">27</p>
+         </div>
+         <div class="flexbox__5">
+            <p class="calendar__a_5">07</p>
+            <p class="calendar">14</p>
+            <p class="calendar">21</p>
+            <p class="calendar">28</p>
+         </div>
+         <div class="flexbox__6">
+            <p class="calendar__a_6">08</p>
+            <p class="calendar">15</p>
+            <p class="calendar">22</p>
+            <p class="calendar">29</p>
+
+         </div>
+         <div class="flexbox__7">
+            <p class="calendar__red_tele_1">09</p>
+            <p class="calendar__red">16</p>
+            <p class="calendar__red">23</p>
+            <p class="calendar__red">30</p>
+         </div>
+   </div>
+</div>
+</div>
+   <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
